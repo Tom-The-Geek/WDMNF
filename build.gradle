@@ -49,6 +49,8 @@ jar {
 	from "LICENSE"
 }
 
+def env = System.getenv()
+
 // configure the maven publication
 publishing {
 	publications {
@@ -66,9 +68,17 @@ publishing {
 		}
 	}
 
-	// select the repositories you want to publish to
 	repositories {
-		// uncomment to publish to the local maven
-		// mavenLocal()
+		if (env.MAVEN_URL) {
+			maven {
+				credentials {
+					username env.MAVEN_USERNAME
+					password env.MAVEN_PASSWORD
+				}
+				url env.MAVEN_URL
+			}
+		} else {
+			mavenLocal()
+		}
 	}
 }
