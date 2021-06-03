@@ -1,0 +1,11 @@
+{
+  "required": true,
+  "package": "com.github.tom_the_geek.wdmnf.mixin",
+  "compatibilityLevel": "JAVA_16",
+  "mixins": [
+    "MixinClientConnection"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "wdmnf",
+  "version": "${version}",
+  "name": "Why Did My Netty Fail",
+  "description": "Show the full stacktrace on netty errors",
+  "authors": [
+    "Tom_The_Geek"
+  ],
+  "contributors": [],
+  "contact": {},
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    "wdmnf.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3"
+  }
+}
