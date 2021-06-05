@@ -11,6 +11,9 @@ repositories {
 }
 
 dependencies {
-    modImplementation inlclude("com.github.tom_the_geek:wdmnf:<version>")
+    modImplementation include("com.github.tom_the_geek:wdmnf:<version>")
 }
 ```
+
+### Latest release
+The current version is `1.0.0` ([or `1.0.0+mc.1.17` for 1.17](https://github.com/Tom-The-Geek/WDMNF/tree/1.17)).
